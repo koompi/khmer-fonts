@@ -6,7 +6,8 @@ arch=('any')
 url="https://github.com/koompi/khmer-fonts"
 source=("git+https://github.com/koompi/khmer-fonts.git")
 md5sums=('SKIP')
-
+conflicts=('ttf-khmer')
+replaces=('ttf-khmer')
 package() {
 
     install -dm755 "${pkgdir}"/usr/share/fonts/l
